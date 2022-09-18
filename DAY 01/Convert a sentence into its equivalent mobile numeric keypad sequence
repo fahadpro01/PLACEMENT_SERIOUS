@@ -1,0 +1,36 @@
+string printSequence(string S)
+{
+    //code here.
+    string count="";
+    unordered_map<char,int>map;
+    map['A']=2;
+    map['B']=22;
+    map['C']=222;
+    map['D']=3;
+    map['E']=33;
+    map['F']=333;
+    map['G']=4;
+    map['H']=44;
+    map['I']=444;
+    map['J']=5;
+    map['K']=55;
+    map['L']=555;
+    map['M']=6;
+    map['N']=66;
+    map['O']=666;
+    map['P']=7;
+    map['Q']=77;
+    map['R']=777;
+    map['S']=7777;
+    map['T']=8;
+    map['U']=88;
+    map['V']=888;
+    map['W']=9;
+    map['X']=99;
+    map['Y']=999;
+    map['Z']=9999;
+    for(int i=0;i<S.size();i++){
+        count+=to_string(map[S[i]]);
+    }
+    return count;
+}
