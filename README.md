@@ -10,3 +10,4 @@ DAY-06 : Toggle bits
 DAY-07 : Array is Fitted,Repeated character in string 
 DAY-08 : Find the Safe place
 DAY-09 : Find all pairs with a given sum
+DAY-10 : Count all possible paths from top left to bottom right
