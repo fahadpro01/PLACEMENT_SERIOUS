@@ -1,0 +1,24 @@
+vector<pair<int,int>> allPairs(int A[], int B[], int N, int M, int X)
+    {   vector<pair<int,int>>map;
+        sort(A,A+N);
+        sort(B,B+M,greater<int>());
+            int i=0,j=0;
+            while(i<N && j<M){
+               if(A[i]+B[j]==X){
+                map.push_back({A[i],B[j]});
+                i++;
+                j++;
+               }
+               else if((A[i]+B[j])<X)
+                       i++;
+                    else
+                       j++;
+                      
+                   
+                   
+    
+           }
+           
+       
+       return map;
+    }
