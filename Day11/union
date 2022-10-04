@@ -1,0 +1,18 @@
+int doUnion(int a[], int n, int b[], int m)  {
+        //code here
+        vector<int>v;
+        int count=0;
+        for(int i=0;i<n;i++){
+            v.push_back(a[i]);
+        }
+        for(int j=0;j<m;j++){
+            v.push_back(b[j]);
+        }
+        sort(v.begin(),v.end());
+        for(int i=0;i<n+m-1;i++){
+            if(v[i]==v[i+1]){
+            count++;
+            }
+        }
+        return v.size()-count;
+    }
