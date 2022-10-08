@@ -12,3 +12,4 @@ DAY-08 : Find the Safe place
 DAY-09 : Find all pairs with a given sum
 DAY-10 : Count all possible paths from top left to bottom right
 DAY-11 : UNion
+Day-12 : Substrings of length k with k-1 distinct element
