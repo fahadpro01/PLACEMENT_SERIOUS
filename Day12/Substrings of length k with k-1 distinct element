@@ -1,0 +1,22 @@
+  int countOfSubstrings(string S, int K) {
+        // code here
+        unordered_map<char,int>map;
+        int i=0,j=0;
+        int ans=0;
+        while(j<S.size()){
+            map[S[j]]++;
+            
+            if(j-i+1==K){
+                if(map.size()==K-1)
+                ans++;
+            
+            map[S[i]]--;
+            if(map[S[i]]==0)
+            map.erase(S[i]);
+            i++;
+            }
+            j++;
+            
+        }
+        return ans;
+       
